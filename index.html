@@ -19,6 +19,43 @@
                 </svg>
             </button>
             <!-- <p>text text</p> -->
+        
+        <div class="modal-elements">
+            <h3 class="modal-title">Leave your information and we'll call you back </h3>
+            <form name="modal-info" class="modal-info">
+                <ul class="modal-list unstyled-list">
+                    <li>
+                        <p class="modal-text">Name</p>
+                        <input class="modal-imput-dimensions" type="text" placeholder="" name="Name" required>
+                        <svg class="modal-svg-contact" >
+                            <use href="images/icons-svg.svg#icon-person-black"></use>
+                            </svg>
+                    </li>
+                    <li>
+                        <p class="modal-text">Telephone</p>
+                        <input class="modal-imput-dimensions" type="tel" placeholder="" name="Telephone" required></li>
+                        <svg class="modal-svg-telephone" >
+                            <use href="images/icons-svg.svg#icon-phone-black"></use>
+                            </svg>
+                    <li>
+                        <p class="modal-text">E-mail</p>
+                        <input class="modal-imput-dimensions" type="email" placeholder="" name="E-mail" required></li>
+                    <li>
+                        <p class="modal-text">Comments</p>
+                        <textarea class="modal-textarea" name="Comments" placeholder="Enter the text" cols="10" rows="5"></textarea></li>
+                    <li>
+                        <div class="modal-terms">
+                            <input type="checkbox" name="Terms and Conditions" value="Terms and Conditions" unchecked required/>
+                            <p class="modal-text-terms">I agree with the letter and accept the 
+                                <a href="#">
+                                    <span class="span-for-link-modal"> Terms and Conditions</span></p>
+                                </a>
+                        </div>
+                    </li>
+                    <li><button type="submit" class="button-submit-modal">Send</button></li>
+                </ul>
+            </form>
+        </div>
         </div>
     </div>
     <!--HeaderSection-->
@@ -121,6 +158,7 @@
                     </div>
                 </li>
             </ul>
+        </section>
         <!--What-we-do-section-->
         <section class="container-for-dimensions padding-bottom-class">
             <h2 class="center-text">What we do</h2>
@@ -370,17 +408,14 @@
             </section>
             <section class="newsletter">
                 <h2 class="subscribe-footer">Subscribe to the newsletter</h2>
-                <form>
-                    <label>
-                      <input class="email-footer" type="email" name="email" placeholder="Email"/>
-                    </label>
+                <form name="email" class="email-footer">
+                    <input type="email" placeholder="Email" name="Email" required>
                     <button class="footer-subscribe-button" type="submit">Subscribe
                         <svg class="subscribe-svg">
                             <use href="images/icons-svg.svg#icon-send"></use>
                         </svg></a></li> 
                     </button>
                 </form>
-
             </section>
         </div>
     </footer>

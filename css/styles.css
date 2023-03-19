@@ -40,7 +40,9 @@ body{
 
 }
 
-.span-for-logo{
+.span-for-logo ,
+.span-for-link-modal
+{
     color: #2196F3;
 }
 
@@ -210,19 +212,114 @@ body{
 
 .modal-close-button 
 {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%; */
-    /* position: absolute; */
     top: 17px;
     right: 17px;
     width: 11px;
     height: 11px;
 }
 
+.modal-elements {
+    width: 448px;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal-info{
+    position: relative;
+    width: max-content;
+}
+
+.modal-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.modal-title{
+    position: relative;
+    height: 23px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 40px;
+    padding-bottom: 12px;
+
+}
+
+.modal-text , 
+.modal-text-terms
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    padding-bottom: 4px;
+}
+
+.modal-text-terms{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+
+.modal-imput-dimensions ,
+.modal-list textarea
+{
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.modal-list textarea{
+    height: 120px;
+}
+
+li input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    margin-right: 8px;
+  }
+  
+  li p.modal-text-terms {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .modal-terms{
+    padding-bottom: 30px;
+  }
+
+  .modal-svg-contact ,
+  .modal-svg-telephone
+   {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    z-index: 1;
+    top:29px;
+    left: 12px;
+}
+.modal-svg-telephone{
+    top: 105px;
+    left: 12px;
+}
+
 .button ,
-.button-studio {
+.button-studio ,
+.button-submit-modal
+{
     font-size: 16px;
     line-height: 26px;
     text-align: center;
@@ -239,6 +336,14 @@ body{
     background: #2196F3;
     padding: 10px 20px; 
     
+}
+
+.button-submit-modal{
+    color: #FFFFFF;
+    background: #2196F3;
+    padding: 10px 80px;
+    margin: 0 auto;
+    display: block;
 }
 
 .button:hover {
@@ -689,10 +794,39 @@ ul.informations-of-contact li:last-child {
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    
+}
+
+.email-footer input[type="email"] {
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+}
+.email-footer input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-subscribe-button{
     position: absolute;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
     color: #FFFFFF;
     width: 200px;
     height: 50px;
@@ -703,6 +837,8 @@ ul.informations-of-contact li:last-child {
     align-items: center;
     text-align: center;
     padding-left: 43px;
+    left: 370px;
+    
 }
 
 .subscribe-svg{
