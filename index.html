@@ -20,42 +20,91 @@
             </button>
             <!-- <p>text text</p> -->
         
-        <div class="modal-elements">
-            <h3 class="modal-title">Leave your information and we'll call you back </h3>
-            <form name="modal-info" class="modal-info">
-                <ul class="modal-list unstyled-list">
-                    <li>
+            <div class="modal-elements">
+                <h3 class="modal-title">Leave your information and we'll call you back </h3>
+                <!-- <form name="modal-info" class="modal-info"> -->
+                <form name="modal-contact-form" class="modal-contact-form">
+                    <label class="modal-form-item">
                         <p class="modal-text">Name</p>
-                        <input class="modal-imput-dimensions" type="text" placeholder="" name="Name" required>
-                        <svg class="modal-svg-contact" >
+                        <svg class="modal-svg-contact">
                             <use href="images/icons-svg.svg#icon-person-black"></use>
-                            </svg>
-                    </li>
-                    <li>
+                        </svg>
+                        <input class="modal-input-dimensions" name="name" type="text" required>
+                    </label>
+                    <label class="modal-form-item">
                         <p class="modal-text">Telephone</p>
-                        <input class="modal-imput-dimensions" type="tel" placeholder="" name="Telephone" required></li>
-                        <svg class="modal-svg-telephone" >
+                        <svg class="modal-svg-telephone">
                             <use href="images/icons-svg.svg#icon-phone-black"></use>
-                            </svg>
-                    <li>
+                        </svg>
+                        <input name="Telephone" type="tel" class="modal-input-dimensions" required>
+                    </label>
+                    <label class="modal-form-item">
                         <p class="modal-text">E-mail</p>
-                        <input class="modal-imput-dimensions" type="email" placeholder="" name="E-mail" required></li>
-                    <li>
+                        <svg class="modal-svg-email">
+                            <use href="images/icons-svg.svg#icon-email-black"></use>
+                        </svg>
+                        <input name="E-mail" type="email" class="modal-input-dimensions" required>
+                    </label>
+                    <label class="modal-form-item">
                         <p class="modal-text">Comments</p>
-                        <textarea class="modal-textarea" name="Comments" placeholder="Enter the text" cols="10" rows="5"></textarea></li>
-                    <li>
-                        <div class="modal-terms">
-                            <input type="checkbox" name="Terms and Conditions" value="Terms and Conditions" unchecked required/>
-                            <p class="modal-text-terms">I agree with the letter and accept the 
-                                <a href="#">
-                                    <span class="span-for-link-modal"> Terms and Conditions</span></p>
-                                </a>
-                        </div>
-                    </li>
-                    <li><button type="submit" class="button-submit-modal">Send</button></li>
-                </ul>
-            </form>
-        </div>
+                        <textarea class="modal-textarea" name="Comments" placeholder="Enter the text" cols="10"
+                            rows="10"></textarea>
+                    </label>
+                    <label class="modal-form-item modal-terms">
+                        <input type="checkbox" name="Terms and Conditions" value="Terms and Conditions" unchecked required />
+                        <span class="modal-replace-checkbox">
+                            <svg class="modal-terms-svg">
+                                <use href="images/icons-svg.svg#icon-check-mark"></use>
+                            </svg>
+                        </span>
+                        <p class="modal-text-terms">I agree with the letter and accept the
+                            <a href="#">
+                                <span class="span-for-link-modal"> Terms and Conditions</span>
+                        </p>
+                        </a>
+                    </label>
+                    <button type="submit" class="button-submit-modal">Send</button>
+                </form>
+                <!-- <div class="modal-terms">
+                                    <input type="checkbox" name="Terms and Conditions" value="Terms and Conditions" unchecked required/>
+                                    <p class="modal-text-terms">I agree with the letter and accept the 
+                                        <a href="#">
+                                            <span class="span-for-link-modal"> Terms and Conditions</span></p>
+                                        </a>
+                                </div> -->
+                <!-- <ul class="modal-list unstyled-list">
+                                <li>
+                                    
+                                    <p class="modal-text">Name</p>
+                                    <input class="modal-input-dimensions" type="text" placeholder="" name="Name" required>
+                                    <svg class="modal-svg-contact" >
+                                        <use href="images/icons-svg.svg#icon-person-black"></use>
+                                        </svg>
+                                </li>
+                                <li>
+                                    <p class="modal-text">Telephone</p>
+                                    <input class="modal-input-dimensions" type="tel" placeholder="" name="Telephone" required></li>
+                                    <svg class="modal-svg-telephone" >
+                                        <use href="images/icons-svg.svg#icon-phone-black"></use>
+                                        </svg>
+                                <li>
+                                    <p class="modal-text">E-mail</p>
+                                    <input class="modal-input-dimensions" type="email" placeholder="" name="E-mail" required></li>
+                                <li>
+                                    <p class="modal-text">Comments</p>
+                                    <textarea class="modal-textarea" name="Comments" placeholder="Enter the text" cols="10" rows="5"></textarea></li>
+                                <li>
+                                    <div class="modal-terms">
+                                        <input type="checkbox" name="Terms and Conditions" value="Terms and Conditions" unchecked required/>
+                                        <p class="modal-text-terms">I agree with the letter and accept the 
+                                            <a href="#">
+                                                <span class="span-for-link-modal"> Terms and Conditions</span></p>
+                                            </a>
+                                    </div>
+                                </li>
+                                <li><button type="submit" class="button-submit-modal">Send</button></li>
+                            </ul> -->
+            </div>
         </div>
     </div>
     <!--HeaderSection-->
